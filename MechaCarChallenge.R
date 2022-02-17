@@ -23,3 +23,10 @@ lot_summary
 
 #Deliverable 3
 
+#Create t.test function
+t.test((Suspension$PSI), mu=1500)
+
+#Create 3 more t.test functions
+t.test((subset(Suspension, Manufacturing_Lot == "Lot1")$PSI), mu=(1500))
+t.test((subset(Suspension, Manufacturing_Lot == "Lot2")$PSI), mu=(1500))
+t.test((subset(Suspension, Manufacturing_Lot == "Lot3")$PSI), mu=(1500))
